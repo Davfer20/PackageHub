@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EvenTEC</title>
+    <link rel="shortcut icon" href="./images/logoBox.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1>PackageHub</h1>
+      </div>
+      <div class="containerh2">
+        <h1>Seleccione su método de ingreso</h1>
+      </div>
+      <div class="container">
+        <button class="image-button" onclick="selectMethod(0)">
+          <img src="./images/empleado.png" alt="Botón empleado" />
+        </button>
+        <button class="image-button" onclick="selectMethod(1)">
+          <img src="./images/cliente.png" alt="Botón cliente" />
+        </button>
+      </div>
+
+      <div class="container2">
+        <button class="buttonT1" onclick="loginButton()">Iniciar Sesion</button>
+        <button class="buttonT1" onclick="singinButton()">Registrarse</button>
+      </div>
+    </header>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {});
+    </script>
+    <script src="./javascript/indexActons.js"></script>
+  </body>
+</html>

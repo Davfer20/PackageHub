@@ -1,0 +1,103 @@
+:root {
+  --accentColorBG: #f2f6f9;
+  --accentColorBD: #c2c2c2;
+  --color-fondo: #f2f2f2;
+}
+
+.content {
+  padding: 20px 50px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+}
+
+.profile-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 50px;
+  margin-top: -30px;
+  padding: 0px 60px;
+}
+
+.imageUserContainer {
+  display: flex;
+  width: 200px;
+  height: auto;
+  border-radius: 500px;
+}
+
+.buttonT1 {
+  min-width: 200px;
+  padding: 10px 50px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: border-color 0.8s;
+  background-color: var(--accentColorBG);
+  border-color: var(--accentColorBD);
+}
+
+.buttonT1:hover {
+  border-color: lightskyblue;
+}
+
+.contact-container {
+  gap: 10px;
+  flex: 1;
+  height: auto;
+  flex-direction: column;
+  display: flex;
+  margin-top: 10px;
+}
+
+.contact-container input {
+  font-size: medium;
+  border: none;
+  border-bottom: 2px solid grey;
+  min-width: 0;
+  width: 60%;
+  transition: width 0.4s ease-in-out;
+}
+
+.contact-container p {
+  font-size: medium;
+  margin-bottom: 5px;
+  min-width: 0;
+  width: 60%;
+  transition: width 0.4s ease-in-out;
+}
+
+.deleteContainer {
+  text-align: center;
+  position: absolute;
+  background-color: white;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  padding: 10px 36px 10px 36px;
+  border-radius: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  outline: none;
+  font-size: 20px;
+  border: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: -1;
+}
+
+.deleteText {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.deleteButton2 {
+  margin-top: 0px;
+  display: inline-block;
+}

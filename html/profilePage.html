@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Perfil</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/profileStyle.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/logoBox.svg"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div id="headerContainer"></div>
+
+    <p class="pageTitle">Perfil</p>
+
+    <div class="content">
+      <div class="profile-container">
+        <img class="imageUserContainer" src="../images/userLogo.svg" />
+        <button class="buttonT1" id="editarProfileButton">Editar</button>
+        <button class="buttonT1" id="eliminarProfileButton">Eliminar</button>
+      </div>
+      <div class="contact-container">
+        <form id="modificarPerfilForm" method="post">
+          <div id="nameProfileDiv" class="profile-attribute">
+            <p>Nombre:</p>
+            <input
+              id="nameProfile"
+              type="text"
+              class="attribute"
+              placeholder=""
+              disabled
+            />
+          </div>
+
+          <div id="userProfileDiv" class="profile-attribute">
+            <p>Usuario:</p>
+            <input
+              id="usernameProfile"
+              type="text"
+              class="attribute"
+              placeholder=""
+              disabled
+            />
+          </div>
+
+          <div id="telefonoProfileDiv" class="profile-attribute">
+            <p>Telefono:</p>
+            <input
+              id="telefonoProfile"
+              type="text"
+              class="attribute"
+              placeholder=""
+              disabled
+            />
+          </div>
+
+          <div id="correoProfileDiv" class="profile-attribute">
+            <p>Correo:</p>
+            <input
+              id="correoProfile"
+              type="text"
+              class="attribute"
+              placeholder=""
+              disabled
+            />
+          </div>
+
+          <div id="ubicacionProfileDiv" class="profile-attribute">
+            <p>Ubicacion:</p>
+            <input
+              id="ubicacionProfile"
+              type="text"
+              class="attribute"
+              placeholder=""
+              disabled
+            />
+          </div>
+
+          <button
+            type="submit"
+            class="buttonT1"
+            id="saveProfileButton"
+            disabled
+          >
+            Guardar cambios
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="errorContainer">
+      <p class="title errorTitle">Alerta</p>
+      <p class="errorText"></p>
+      <button class="buttonT1 errorButton">Cerrar</button>
+    </div>
+
+    <div class="deleteContainer">
+      <p class="title deleteText">Alerta</p>
+      <p class="deleteText">
+        ¿Está seguro que desea borrar su cuenta? Esta acción no puede ser
+        revertida.
+      </p>
+      <button class="buttonT1 deleteButton" id="confirmDelButton">
+        Confirmar
+      </button>
+      <button class="buttonT1 deleteButton" id="cancelDelButton">
+        Cancelar
+      </button>
+    </div>
+
+    <script>
+      // Cargar el encabezado usando fetch y insertarlo en el contenedor
+      fetch("header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          const headerContainer = document.getElementById("headerContainer");
+          headerContainer.innerHTML = data;
+        });
+    </script>
+
+    <script type="module" src="../javascript/modificarPerfil.js"></script>
+  </body>
+</html>

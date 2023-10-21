@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Estudiante</title>
+    <link rel="shortcut icon" href="./images/logoBox.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="formulario">
+        <p class="title">Inicio de Sesión</p>
+        <p class="subtitle">Cliente</p>
+        <form id="loginEstudianteForm" method="post">
+          <div class="inputT1 usernameE">
+            <input
+              id="usernameEstLog"
+              type="text"
+              placeholder="Username"
+              required
+            />
+          </div>
+
+          <div class="inputT1 password">
+            <input
+              id="passwordEstLog"
+              type="password"
+              placeholder="Password"
+              required
+            />
+          </div>
+
+          <div>
+            <button class="buttonT1" type="submit">Iniciar Sesión</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <div class="errorContainer">
+      <p class="title">Alerta</p>
+      <p class="errorText"></p>
+      <button class="buttonT1 errorButton">Cerrar</button>
+    </div>
+
+    <script type="module" src="../javascript/loginCliente.js"></script>
+  </body>
+</html>
